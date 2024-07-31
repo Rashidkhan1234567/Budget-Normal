@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo/logo.jpeg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <title>BUDGET CALCULATOR</title>
+  </head>
+  <body>
+    <div class="flex_side_1">
+      <div class="box">
+        <div class="budget">
+          <button type="button" id="newBudget">New <span>Budget</span></button>
+          <button type="button" id="Clear">Clear all data</button>
+          <h1>Bud<span>get</span></h1>
+          <input
+            autocomplete="off"
+            placeholder="Enter Budget"
+            class="input"
+            name="text"
+            type="text"
+            id="budgetInput"
+          /><br />           
+          <button class="animated-button" id="setBudget">
+            <span class="text"> Set Budget</span>
+            <span class="circle"></span>
+          </button>
+        </div>
+        <div class="expanses">
+          <h1>Expa<span>nses</span></h1>
+          <input
+            autocomplete="off"
+            placeholder="Enter Title Of Product"
+            class="input"
+            name="text"
+            type="text"
+            id="productTitleInput"
+          /><br />
+          <input
+            autocomplete="off"
+            placeholder="Enter Cost Of Product"
+            class="input"
+            name="text"
+            type="text"
+            id="productCostInput"
+          /><br />
+          <button class="animated-button" id="checkAmount">
+            <span class="text">Check Amount</span>
+            <span class="circle"></span>
+          </button>
+        </div>
+      </div>
+      <div class="display">
+        <div class="item_1">
+          <h2>Total Budget</h2>
+          <p class="totalBudget">0</p>
+        </div>
+        <div class="item_2">
+          <h2>Expanses</h2>
+          <p class="Expanses">0</p>
+        </div>
+        <div class="item_3">
+          <h2>Balance</h2>
+          <p class="Balance">0</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex_side_2">
+      <h1>Expanse <span><span class="l">L</span>ist</span></h1>
+      <ol id="save">
+        <!-- <li>
+          <p id="Product">Milk</p> 
+          <P id="price">2000</P>
+          <button class="delete_button"><i class="fa-solid fa-trash"></i></button>
+        </li> -->
+      </ol>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
